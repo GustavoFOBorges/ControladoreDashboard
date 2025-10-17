@@ -1,0 +1,6 @@
+sudo apt install python3.12-venv
+python-m venv venv
+sourcer venv/bin/activate
+pip install psutil requests
+
+python3 agente.py
