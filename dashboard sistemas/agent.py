@@ -1,4 +1,4 @@
-  GNU nano 7.2                                          agent2.py                                                   import psutil
+import psutil
 import time
 import requests
 import platform
@@ -50,3 +50,4 @@ while True:
 
 
     time.sleep(5)
+
