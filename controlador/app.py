@@ -19,7 +19,8 @@ def update():
     return {"status": "ok"}
 
 if __name__ == '__main__':
-    # use threading como fallback no Windows
+     
     socketio.run(app, host='0.0.0.0', port=5001, debug=True, use_reloader=True)
+
 
 
