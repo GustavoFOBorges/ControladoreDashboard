@@ -4,7 +4,7 @@ import requests
 import platform
 
 SERVER_URL = "http://10.69.32.14:5001/update"  # IP do servidor central
-SERVER_NAME = "Servidor Web"  # Troque para Servidor2 / Servidor3 nos outros agentes
+SERVER_NAME = "Servidor Web"  # Troque para o correspondente
 
 def get_temp():
     """
@@ -47,5 +47,6 @@ while True:
         requests.post(SERVER_URL, json=data)
     except Exception as e:
         print("Erro ao enviar dados:", e)
+
 
     time.sleep(5)
